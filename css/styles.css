@@ -28,6 +28,45 @@ html {
     box-sizing: border-box;
 }
 
+/* Стили для обнуления верхних отступов у элементов */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+}
+
+/* Класс для обнуления базовых свойств у списков (ul) */
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+/* Класс для обнуления базовых свойств у ссылок */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Свойства для корректного отображения картинок */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Свойства для обнуления курсива у address */
+
+address {
+    font-style: normal;
+}
+
+
+
 
 body {
     margin: 0;
@@ -41,10 +80,6 @@ body {
     color: var(--text-color);
     
 }
-
-h1, h2, h3, h4, h5, h6, p {
-    margin: 0;
-   }
 
 
 /* Header */
@@ -71,9 +106,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 
 .page-header {
-    padding-bottom: 24px;
-    padding-top: 25px;
-
+    
     border-bottom: 1px solid var(--border-header-color);
     
 }
@@ -98,26 +131,30 @@ h1, h2, h3, h4, h5, h6, p {
     color: var(--title-text-color);
 }
 
-ul {
-    margin: 0;
-    padding: 0;
-
-
-    list-style: none;
-}
 
 .site-nav
 {
 display: flex;
+align-items: center;
+margin: auto;
 }
 
 .site-nav-links {
     display: flex;
     align-items: center;
     margin-right: 331px;
-    justify-content: space-between;
     width: 294px;
     
+}
+
+.site-nav-links .item:not(:last-child) {
+    margin-right: 50px;
+    
+}
+
+.site-nav-links .item {
+    margin-top: 32px;
+    margin-bottom: 32px;
 }
 
 
@@ -148,6 +185,11 @@ display: flex;
 
 .auth-nav .item:not(:last-child) {
     margin-right: 50px;
+}
+
+.auth-nav .item {
+    margin-top: 32px;
+    margin-bottom: 32px;
 }
 
 
@@ -249,6 +291,11 @@ display: flex;
     margin-right: 30px;
 }
 
+.benefits>.item {
+    width: 270px;
+}
+
+
 
 .benefits .title {
 
@@ -320,11 +367,11 @@ display: flex;
 }
 
 .team-position {
-/* margin .team-name і padding-bottom .card  наїджає на нього?*/
            
     font-size: 16px;
-    line-height: 1.19px;
+    line-height: 1.19;
     text-align: center;
+    margin-bottom: 0;
            
 }
 
@@ -358,14 +405,12 @@ display: flex;
 
 .link-address {
     
-    font-style: normal;
     text-decoration: none;
     color: var(--main-bg-color)
 }
 
 .link-auth-nav-footer {
 
-    font-style: normal;
     text-decoration: none;
     color: var(--link-auth-nav-footer);
 }
@@ -438,8 +483,8 @@ display: flex;
 
 
 .list-projects .item {
-    /* Не коректне значенн? Чому?*/
-    width: calc((100%-60px)/3); 
+    
+    width: calc((100%-90px)/3); 
     
     
     padding-bottom: 20px;
