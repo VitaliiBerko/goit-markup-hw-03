@@ -63,6 +63,7 @@ img {
 
 address {
     font-style: normal;
+
 }
 
 
@@ -112,6 +113,8 @@ body {
 }
 
 .accent-logo {
+
+    margin-bottom: 20px;
      
     font-family: 'Raleway';
     font-size: 26px;
@@ -153,13 +156,15 @@ margin: auto;
 }
 
 .site-nav-links .item {
-    margin-top: 32px;
-    margin-bottom: 32px;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 
 .site-nav-links .link {
-      
+    padding-top: 32px;
+    padding-bottom: 32px;
+          
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -187,13 +192,11 @@ margin: auto;
     margin-right: 50px;
 }
 
-.auth-nav .item {
-    margin-top: 32px;
-    margin-bottom: 32px;
-}
-
 
 .auth-nav .link {
+
+    padding-top: 32px;
+    padding-bottom: 32px;
         
     font-weight: 500;
     line-height: 1.14;
@@ -344,8 +347,7 @@ margin: auto;
 }
 
 .card {
-    padding-bottom: 30px;
-    
+        
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
@@ -354,8 +356,13 @@ margin: auto;
     margin-right: 30px;
 }
 
+.team-description {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 .team-name {
-    margin: 30px auto 10px;
+    margin-bottom: 10px;
     
     font-weight: 500;
     font-size: 16px;
@@ -371,8 +378,7 @@ margin: auto;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
-    margin-bottom: 0;
-           
+    margin-bottom: 0;          
 }
 
 
@@ -386,7 +392,8 @@ margin: auto;
 
 
 .logo-footer {
-    
+
+       
     font-family: 'Raleway';
     font-size: 26px;
     line-height: 1.19px;
@@ -395,7 +402,7 @@ margin: auto;
 }
 
 .address {
-    margin-top: 20px;
+    
 }
 
 .address .item:not(:last-child)
@@ -484,20 +491,25 @@ margin: auto;
 
 .list-projects .item {
     
-    width: calc((100%-90px)/3); 
+   flex-basis: calc((100%-90px)/3); 
+     
     
     
-    padding-bottom: 20px;
+}
 
-    border-bottom: 1px solid var(--border-color);
+.description-project {
+    padding: 20px 24px;
     
+    border: 1px solid var(--border-color);
+
 }
 
 
 
 .title-project {
-    margin: 20px 24px 4px;
-    
+
+    margin-bottom: 4px;
+        
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
@@ -506,7 +518,7 @@ margin: auto;
 }
 
 .type-project {
-    margin-left: 24px;
+    margin-bottom: 0;
     
     font-size: 16px;
     line-height: 1.9;
