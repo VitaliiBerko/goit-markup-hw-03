@@ -88,7 +88,6 @@ body {
 .container {
 
     max-width: 1200px;
-    width: 100%;
     margin: 0 auto;
     padding: 0 15px;
     } 
@@ -113,17 +112,17 @@ body {
 }
 
 .accent-logo {
+
+    margin-right: 93px;
            
     font-family: 'Raleway';
     font-size: 26px;
     line-height: 1.19;
-    text-decoration: none;
-
+    
     color: var(--accent-color);
 }
 
-.logo-header {
-    margin-right: 93px;
+.logo-header {    
 
     font-family: 'Raleway';
     font-size: 26px;
@@ -137,14 +136,13 @@ body {
 {
 display: flex;
 align-items: center;
-margin: auto;
+margin-right: auto;
 }
 
 .site-nav-links {
+    
     display: flex;
     align-items: center;
-    margin-right: 331px;
-    width: 294px;
     
 }
 
@@ -153,13 +151,11 @@ margin: auto;
     
 }
 
-.site-nav-links .item {
-    padding-top: 32px;
-    padding-bottom: 32px;
-}
-
 
 .site-nav-links .link {
+    display: block;
+
+
     padding-top: 32px;
     padding-bottom: 32px;
           
@@ -192,6 +188,7 @@ margin: auto;
 
 
 .auth-nav .link {
+    display: block;
 
     padding-top: 32px;
     padding-bottom: 32px;
@@ -285,7 +282,7 @@ margin: auto;
 
 .benefits {
     display: flex;
-    background-color: var(--main-bg-color);
+    
 }
 
 .benefits > .item:not(:last-child) {
@@ -312,7 +309,8 @@ margin: auto;
 /* what we are doing */
 
 .section-work {
-    padding-bottom: 94px;    
+    
+    padding-top: 0;  
 }
 
 
@@ -345,7 +343,10 @@ margin: auto;
 }
 
 .card {
-        
+    
+    background-color: var(--main-bg-color);
+    
+
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
@@ -357,6 +358,8 @@ margin: auto;
 .team-description {
     padding-top: 30px;
     padding-bottom: 30px;
+
+    
 }
 
 .team-name {
@@ -388,6 +391,13 @@ margin: auto;
     background-color: var(--secondary-bg-color);
 }
 
+.section-footer .accent-logo {
+    display: block;
+
+    margin-bottom: 20px;
+    
+}
+
 
 .logo-footer {
 
@@ -399,9 +409,7 @@ margin: auto;
     color: var(--main-bg-color);
 }
 
-.address {
-    
-}
+
 
 .address .item:not(:last-child)
  {
@@ -489,7 +497,7 @@ margin: auto;
 
 .list-projects .item {
     
-   flex-basis: calc((100%-90px)/3); 
+   flex-basis: calc((100% - 60px) / 3); 
      
     
     
